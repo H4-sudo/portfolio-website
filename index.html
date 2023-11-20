@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrico Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+</head>
+<body>
+    <section id="landing">
+        <div class="background-image"></div>
+        <div id="animated-text">
+            <h1 id="typed-text"></h1>
+        </div>
+        <div id="navbar">
+            <nav>
+                <div class="logo"><a href="#home">Henrico Swanepoel Portfolio</a></div>
+                <div class="menu-toggle">&#9776;</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="section-content">
+            <div class="photo">
+                <img src="assets/images/HenricoCoverPhoto.jpg" alt="Portrait of Henrico Swanepoel">
+            </div>
+            <div class="text-area">
+                <h1>Welcome to my Portfolio</h1>
+                <p>
+                    Welcome to my digital space! I am passionate about programming, robotics, and carving my own path in the tech world.
+                     Explore my portfolio, projects, and get to know more about me. As a career driven student, I will always have the drive and
+                     passion to keep on learning no matter the job I get.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Henrico, a software development student based in Pretoria, South Africa.
+             My journey in the world of technology is fueled by my love for robotics, programming,
+             and a zest for innovation. Aspiring to make a mark in the tech industry, I am dedicated to continuous learning and creative problem-solving.
+             I believe my personality is one of the easier aspects of me, clients will love me as I discuss the state of their projects.
+        </p>
+        <br>
+        <p>
+            When I'm not immersed in lines of code, you can find me skateboarding or enjoying a diverse range of music. Sometimes even trying to make my own
+            Operating System, highly adjusted to my preferences of security and ease of use.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <br>
+        <p class="skills-list">As a dedicated software development student, I've acquired a diverse set of skills. Here are some of the key areas I specialize in:</p>
+        <br>
+        <ul>
+            <li>Programming Languages: Java, Python, JavaScript, C, C++, SQL</li>
+            <li>Web Development: HTML, CSS, React.js</li>
+            <li>Robotics: Arduino</li>
+            <li>Version Control: Git</li>
+            <li>Problem Solving: Data Structures, Algorithms</li>
+            <li>Database Management: MySQL</li>
+            <li>Cloud Computing: Microsoft Azure, Amazon Web Services(AWS)</li>
+            <li>
+                Certifications: Microsoft DP-900, ITS-OD 301(IT Specialist in HTML & CSS), ITS-OD 302(IT Specialist in JavaScript),
+                 ITS-OD 303(IT Specialist in Python)
+            </li>
+        </ul>
+        <br>
+        <p>I'm always eager to expand my skill set and take on new challenges. Stay tuned for updates on my latest endeavors!</p>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <div class="text-area">
+                <h2>Projects</h2>
+                <br>
+                <div class="project">
+                    <h3>Python Basics Project</h3>
+                    <br>
+                    <div class="photo">
+                        <img src="assets/images/project1.png" alt="Python Basics Project">
+                    </div>
+                    <p>
+                        As most things go, you should learn to crawl before you start running. The goal behind this project was to understand
+                        some of the basics in Python.
+                    </p>
+                </div>
+
+                <br><br>
+
+                <div class="project">
+                    <h3>Python CLI game with a class and luck system</h3>
+                    <br>
+                    <div class="photo">
+                        <img src="assets/images/Project2.png" alt="Python Command Line Interface Game">
+                    </div>
+                    <p>
+                        This was somewhat of a courages project. I threw myself into the deep end to get a better grasp on using classes in Python.
+                        It turned out to be one of the projects I went back to the most, it's a simple game, but the battles can become quite intense,
+                        seeing that all the options are luck dependant.
+                    </p>
+                </div>
+
+                <br><br>
+
+                <div class="project">
+                    <h3>Python POS application</h3>
+                    <br>
+                    <div class="photo">
+                        <img src="assets/images/Project3.png" alt="Python Point of Sale Application">
+                    </div>
+                    <p>
+                        Ever heard the saying "Don't reinvent the wheel"? Well this project was wholely focused on reinventing one of the most important
+                        softwares ever made for our day-to-day lives. With about 1 or 2 weeks of constant debugging, I achieved a <strong>somewhat</strong> working
+                        Point of Sale software solution for a make believe restaurant. This project reminds me that no matter how sound your code may look,
+                        there will always be a landmine waiting for you to step onto it. Lesson: Debug, debug, debug.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating or just want to chat? Feel free to reach out!</p>
+        <br>
+        <div class="contact-form">
+            <form id="contact-form" action="assets/PHP/contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
